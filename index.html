@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Image to Social Media Account</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="lock-overlay" id="lockOverlay">
+        <div class="lock-card">
+            <div class="lock-icon">🔒</div>
+            <h2>Tool Is Locked</h2>
+            <p class="lock-desc">First follow my WhatsApp Channels to unlock tool</p>
+
+            <div class="channel-list">
+                <div class="channel-item">
+                    <span>Channel link</span>
+                    <a href="https://whatsapp.com/channel/0029VbBiFfJ3LdQN3IBsgF2q" target="_blank" class="btn-ch" id="chBtn1">Follow ↗</a>
+                </div>
+                <div class="channel-item">
+                    <span>Channel link</span>
+                    <a href="https://whatsapp.com/channel/0029VbB47ttDDmFNztpnZf2m" target="_blank" class="btn-ch" id="chBtn2">Follow ↗</a>
+                </div>
+                <div class="channel-item">
+                    <span>Channel link</span>
+                    <a href="https://whatsapp.com/channel/0029VaUjhPYIt5rvVy9fpg3R" target="_blank" class="btn-ch" id="chBtn3">Follow ↗</a>
+                </div>
+            </div>
+
+            <button class="btn-unlock" id="verifyBtn" disabled>🔓 Verify & Unlock Tool</button>
+        </div>
+    </div>
+
+    <header class="banner">
+        <h1 class="glitch" data-text="Find image to social media account">
+            Find image to social media account
+        </h1>
+        <p class="tagline">upload image and find social media accounts</p>
+        <p class="tagline">Developer: <span class="dev">Nawab Zada Hacker ☠️🙌🦅</span></p>
+    </header>
+
+    <main class="container">
+
+        <section class="upload-section">
+            <div class="upload-box" id="uploadBox">
+                <input type="file" id="imageInput" accept="image/*" hidden>
+                <div class="upload-icon">📤</div>
+                <p>Upload image</p>
+                <span>(JPG, PNG, WEBP — Max 5MB)</span>
+            </div>
+
+            <div class="preview-area" id="previewArea" style="display:none;">
+                <img id="imagePreview" alt="Image Preview">
+                <br>
+                <button class="btn-change" id="changeBtn">🔄Change Image</button>
+            </div>
+        </section>
+
+        <section class="scan-section">
+            <button class="btn-scan" id="scanBtn">FIND SOCIAL MEDIA ACCOUNTS</button>
+        </section>
+
+        <section class="scanning-section" id="scanningSection" style="display:none;">
+            <div class="loader"></div>
+            <h3>scanning accounts...</h3>
+            <ul class="scan-steps" id="scanSteps"></ul>
+        </section>
+
+        <section class="results-section" id="resultsSection" style="display:none;">
+            <h2>Results</h2>
+            <p class="result-summary" id="resultSummary"></p>
+            <div class="results-grid" id="resultsGrid"></div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>Developed By <span class="dev">Nawab Zada Hacker ☠️🙌🦅</span></p>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
